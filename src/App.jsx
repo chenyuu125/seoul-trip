@@ -55,12 +55,14 @@ const TRIP_DATES = [
   { day: 6, date: "2/02 (一)", fullDate: "2026-02-02", location: "返程", defaultWeather: { temp: "2°C", condition: "Sunny", icon: "sun" } },
 ];
 
-// --- Firebase Configuration & Initialization ---
-const firebaseConfig = JSON.parse(__firebase_config || '{}');
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-const db = getFirestore(app);
-const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
+const firebaseConfig = {
+  apiKey: "AIzaSyDQF7qJgpfKI5tWgOeYJbuU6UM7yrDn6jU",
+  authDomain: "seoul-trip-e1b36.firebaseapp.com",
+  projectId: "seoul-trip-e1b36",
+  storageBucket: "seoul-trip-e1b36.firebasestorage.app",
+  messagingSenderId: "206367773846",
+  appId: "1:206367773846:web:0ad35c13c9e76045a01eb7"
+};
 
 
 
